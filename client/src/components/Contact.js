@@ -71,6 +71,15 @@ const Contact = () => {
 
     return (
         <>
+
+        <div className="home-page">
+                <div className="home-div">
+                    <p className="pt-5">WELCOME</p>
+                    <h2>Contact us</h2>
+                    
+                </div>
+            </div>
+
        <div className="contact_info">
      <div className="container-fluid">
          <div className="row">
@@ -81,21 +90,21 @@ const Contact = () => {
                          <img src="https://img.icons8.com/office/24/000000/iphone.png" alt="" /></div>
                          <div className="contact_info_content">
                              <div className="contact_info_title">Phone</div>
-                             <div className="contact_info_text">+91   </div>
+                             <div className="contact_info_text">+91 9876543210  </div>
                          </div>
                      </div> 
                      <div className="contact_info_item d-flex flex-row align-items-center justify-content-start">
                          <div className="contact_info_image"><img src="https://img.icons8.com/ultraviolet/24/000000/filled-message.png" alt="" /></div>
                          <div className="contact_info_content">
                              <div className="contact_info_title">Email</div>
-                             <div className="contact_info_text">@.</div>
+                             <div className="contact_info_text">msit@Msitprogram.net</div>
                          </div>
                      </div> 
                      <div className="contact_info_item d-flex flex-row align-items-center justify-content-start">
                          <div className="contact_info_image"><img src="https://img.icons8.com/ultraviolet/24/000000/map-marker.png" alt="" /></div>
                          <div className="contact_info_content">
                              <div className="contact_info_title">Address</div>
-                             <div className="contact_info_text">, , </div>
+                             <div className="contact_info_text">MSIT, JNTUH, Kukatpally</div>
                          </div>
                      </div>
                  </div>
@@ -109,7 +118,7 @@ const Contact = () => {
 
             {/* contact us form  */}
 
-            <div className="contact_form">
+            {/* <div className="contact_form">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-10 offset-lg-1">
@@ -157,7 +166,10 @@ const Contact = () => {
                         </div>
                      </div>
                  </div>   
-        </div>
+        </div> */}
+<div align="center">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzS6xPwbLhxvpmvoFJO9my2vWT9vmpYB6TcIpwKkBdMjQgwA/viewform?embedded=true" width="1200" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
         </>
     )
 }

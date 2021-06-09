@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react';
-import loginpic from "../images/login.svg";
+import loginpic from "../images/logig.jpg";
 import { NavLink, useHistory } from "react-router-dom";
 
 import {UserContext} from "../App";
@@ -38,6 +38,11 @@ const Login = () => {
 
     return (
         <>
+                <div className="home-page">
+                <div className="home-div">
+                    <p className="pt-5">WELCOME</p>              
+                </div>
+            </div>
              <section className="sign-in">
                 <div className="container mt-5">
                     <div className="signin-content">
@@ -50,7 +55,7 @@ const Login = () => {
                             </div>
                        
                         <div className="signin-form">
-                            <h2 className="form-title">Sign up</h2>
+                            <h2 className="form-title">Login</h2>
                             <form method="POST" className="register-form" id="register-form">
                              
 

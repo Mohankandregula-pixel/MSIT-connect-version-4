@@ -1,6 +1,6 @@
 import React, {useReducer, createContext} from 'react'
 import { Route, Switch } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -10,6 +10,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ErrorPage from "./components/Errorpage";
 import Logout from "./components/Logout";
+import Resources from "./components/Resources";
 
 import { initialState, reducer } from "./reducer/UseReducer";
 
@@ -48,6 +49,10 @@ const Routing = () => {
         <Logout />
       </Route>
       
+      <Route path="/Resources">
+        <Resources />
+      </Route>
+
       <Route>
         <ErrorPage />
       </Route>

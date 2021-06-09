@@ -51,7 +51,15 @@ const About = () => {
     
 
     return (
-        <>  
+        <>
+                <div className="home-page">
+                <div className="home-div">
+                    <p className="pt-5">WELCOME</p>
+                    <h2>About </h2>
+                    
+                </div>
+            </div>
+        
             {userData.work == "student" &&(
                 <div className="container emp-profile">
            
@@ -96,13 +104,7 @@ const About = () => {
                             <div className="profile-work">
                                 <p> WORK LINK</p>
                                 <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA" target="_thapa">Youtube</a> <br />
-                                {/* <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA" target="_thapa">Instagram</a> <br />
-                                <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA" target="_thapa">Thapa Technical</a> <br />
-                                <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA" target="_thapa">WebsiteGitHubMERN Dev</a> <br />
-                                <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA" target="_thapa">Web Developer</a> <br />
-                                <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA" target="_thapa">Figma</a> <br />
-                                <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA" target="_thapa">Software Engeeneer</a> <br />
-                                 */}
+
                                 
                             </div>
                         </div> 
