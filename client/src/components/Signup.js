@@ -41,15 +41,16 @@ const Signup = () => {
 
 
     const PostData = async (e) => {
-        if(errors.length === 0) {
-            const { name, email, phone, work,btech, score ,twel, tenth,password, cpassword } = user;
+        e.preventDefault();
+        // if(errors.length === 0) {
+            const { name, email, phone, work, btech, score , twel, tenth,password, cpassword } = user;
             const res = await fetch("/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
-                    name, email, phone, work,btech, score,twel, tenth, password, cpassword
+                    name, email, phone, work, btech, score, twel, tenth, password, cpassword
                 })
             });
     
@@ -65,7 +66,7 @@ const Signup = () => {
     
                 history.push("/login");
             }
-        }
+        
         
     }
 
@@ -214,7 +215,7 @@ const Signup = () => {
                                 <figure>
                                     <img src={signpic} alt="registration pic" />
                                 </figure>
-                                <NavLink to="/login" className="signup-image-link">I am already register</NavLink>
+                                <NavLink to="/login" className="signup-image-link">I already have an account</NavLink>
                             </div>
                        
                     </div>
