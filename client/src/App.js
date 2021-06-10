@@ -10,9 +10,11 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ErrorPage from "./components/Errorpage";
 import Logout from "./components/Logout";
+import Update from "./components/update";
 import Resources from "./components/Resources";
 
 import { initialState, reducer } from "./reducer/UseReducer";
+import Edit from './components/Edit';
 
 
 // we create a contextAPI 
@@ -37,6 +39,10 @@ const Routing = () => {
         <Contact />
       </Route>
 
+      <Route path="/update">
+        <Update />
+      </Route>
+
       <Route path="/login">
         <Login />
       </Route>
@@ -54,7 +60,12 @@ const Routing = () => {
       </Route>
 
       <Route>
-        <ErrorPage />
+        {/* <ErrorPage /> */}
+        <Edit />
+
+      </Route>
+      <Route path="/edit" >
+        <Edit />
       </Route>
     </Switch>
     </>
