@@ -149,7 +149,7 @@ const Signup = () => {
                                     <label htmlFor="work">
                                         <i className="zmdi zmdi-slideshow material-icons-name"></i>
                                     </label>
-                                    <input type="number" name="score" id="score" autoComplete="off" required
+                                    <input type="number" name="score" id="score" autoComplete="off" required max="100"
                                         value={user.score}
                                         onChange={handleInputs}
                                         placeholder="Your Btech score"
@@ -160,7 +160,7 @@ const Signup = () => {
                                     <label htmlFor="work">
                                         <i className="zmdi zmdi-slideshow material-icons-name"></i>
                                     </label>
-                                    <input type="number" name="twel" id="twel" autoComplete="off" required
+                                    <input type="number" name="twel" id="twel" autoComplete="off" required max="100"
                                         value={user.twel}
                                         onChange={handleInputs}
                                         placeholder="Your 10+2 score"
@@ -171,7 +171,7 @@ const Signup = () => {
                                     <label htmlFor="work">
                                         <i className="zmdi zmdi-slideshow material-icons-name"></i>
                                     </label>
-                                    <input type="number" name="tenth" id="tenth" autoComplete="off"  required max="100" 
+                                    <input type="number" name="tenth" id="tenth" autoComplete="off"  required max="100"
                                         value={user.tenth}
                                         onChange={handleInputs}
                                         placeholder="Your 10th score"
