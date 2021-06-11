@@ -10,7 +10,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ErrorPage from "./components/Errorpage";
 import Logout from "./components/Logout";
-import Update from "./components/update";
+import Update from "./components/Update";
 import Resources from "./components/Resources";
 
 import { initialState, reducer } from "./reducer/UseReducer";
@@ -39,7 +39,7 @@ const Routing = () => {
         <Contact />
       </Route>
 
-      <Route path="/update">
+      <Route path="/Update">
         <Update />
       </Route>
 

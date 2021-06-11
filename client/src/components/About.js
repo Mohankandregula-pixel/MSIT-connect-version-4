@@ -104,13 +104,17 @@ const About = () => {
             </div>
 
             <div className="col-md-2">
-              <button onClick={() => setEdit(true)}>Edit Profile</button>
+              {/* <button onClick={() => setEdit(true)}>Edit Profile</button> */}
+              <a href="/Update">  
+                <button>Edit </button>  
+              </a>
+
             </div>
           </div>
 
           <div className="row">
             {/* right side data toogle  */}
-            {!edit ? (
+            {/* {!edit ? ( */}
               <>
                 <div className="col-md-8 pl-5 about-info">
                   <div className="tab-content profile-tab" id="myTabContent">
@@ -203,11 +207,11 @@ const About = () => {
                   </div>
                 </div>
               </>
-            ) : (
+            {/* ) : (
               <>
                 <Edit />
               </>
-            )}
+            )} */}
           </div>
         </div>
       )}

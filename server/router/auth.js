@@ -8,6 +8,7 @@ const authenticate = require("../middleware/authenticate");
 require('../db/conn');
 const User = require("../model/userSchema");
 const Post = require("../model/postSchema");
+const { findById } = require('../model/userSchema');
 
 router.get('/', (req, res) => {
     res.send(`Hello world from the server rotuer js`);
@@ -61,6 +62,20 @@ router.post('/register', async (req, res) => {
 
 });
 
+router.put('/profile/update', async(req, res) => {
+    console.log(req);
+    try {
+        const userExist = await User.findOne({_id: req.body['_id']});
+        console.log("user exists", userExist)
+        userExist.name = req.body.name;
+        userExist.email = req.body.email;
+        userExist.save();
+        res.send({data: { status : 'Updated Successfully' }})
+    }
+    catch (err) {
+        console.log(err)
+    }
+})
 
 // login route 
 

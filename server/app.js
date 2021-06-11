@@ -38,6 +38,7 @@ const PORT = process.env.PORT;
 //     res.send(`Hello Login world from the server`);
 // });
 
+
 app.get('/signup', (req, res) => {
     res.send(`Hello Registration world from the server`);
 });
