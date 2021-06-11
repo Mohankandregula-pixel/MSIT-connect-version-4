@@ -69,6 +69,12 @@ router.put('/profile/update', async(req, res) => {
         console.log("user exists", userExist)
         userExist.name = req.body.name;
         userExist.email = req.body.email;
+        userExist.phone = req.body.phone;
+        userExist.btech = req.body.btech;
+        userExist.score = req.body.score;
+        userExist.twel = req.body.twel;
+        userExist.tenth = req.body.tenth;
+
         userExist.save();
         res.send({data: { status : 'Updated Successfully' }})
     }
